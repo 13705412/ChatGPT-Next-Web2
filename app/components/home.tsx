@@ -430,6 +430,31 @@ export function Chat(props: { showSideBar?: () => void, sideBarShowing?: boolean
           -
         </div>
       </div>
+import React, { useState } from 'react';
+
+function MyComponent() {
+  const [showModal, setShowModal] = useState(true);
+  
+  // 其他代码
+  
+  return (
+    <div>
+      {/* 如果showModal为true，则显示弹窗 */}
+      {showModal && (
+        <div className="modal">
+          {/* 弹窗的内容 */}
+          <div className="modal-content">
+            <h2>公告标题</h2>
+            <p>这是一条公告信息。</p>
+          </div>
+          
+          {/* 弹窗的关闭按钮 */}
+          <button onClick={() => setShowModal(false)}>关闭</button>
+        </div>
+      )}
+    </div>
+  );
+}
 
       <div className={styles["chat-input-panel"]}>
         <PromptHints prompts={promptHints} onPromptSelect={onPromptSelect} />
