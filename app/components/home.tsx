@@ -31,6 +31,37 @@ import { REPO_URL } from "../constant";
 import { ControllerPool } from "../requests";
 import { Prompt, usePromptStore } from "../store/prompt";
 
+import React, { useEffect } from 'react';
+import Modal from 'react-modal';
+
+function Popup() {
+  const closeModal = () => {
+    setIsOpen(false);
+  };
+
+  useEffect(() => {
+    Modal.setAppElement('body');
+    setIsOpen(true);
+
+    return () => {
+      setIsOpen(false);
+    };
+  }, []);
+
+  return (
+    <div>
+      <Modal isOpen={isOpen} onRequestClose={closeModal}>
+        <h2>公告标题</h2>
+        <p>公告正文内容。</p>
+        <button onClick={closeModal}>关闭弹窗</button>
+      </Modal>
+    </div>
+  );
+}
+
+export default Popup;
+
+
 export function Loading(props: { noLogo?: boolean }) {
   return (
     <div className={styles["loading-content"]}>
