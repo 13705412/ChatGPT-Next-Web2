@@ -581,9 +581,12 @@ export function Home() {
         className={styles.sidebar + ` ${showSideBar && styles["sidebar-show"]}`}
       >
         <div className={styles["sidebar-header"]}>
-          <div className={styles["sidebar-title"]}>ChatGPT Next</div>
+          <div className={styles["sidebar-title"]}>x5 ChatGPT</div>
           <div className={styles["sidebar-sub-title"]}>
-            Build your own AI assistant.
+            www.x5.chat.
+          </div>
+          <div className={styles["sidebar-sub-title"]}>
+            手机用户请双击此页面.
           </div>
           <div className={styles["sidebar-logo"]}>
             <ChatGptIcon />
