@@ -1,19 +1,30 @@
-import React, { useState } from 'react';
+import React, { FC } from 'react';
+import Modal from 'antd/lib/modal/Modal';
 
-const PopupNotice = () => {
-  const [showNotice, setShowNotice] = useState(true);
+interface AnnouncementModalProps {
+  title: string;
+  content: JSX.Element;
+  visible: boolean;
+  onClose?: () => void;
+}
 
+const AnnouncementModal: FC<AnnouncementModalProps> = ({
+  title,
+  content,
+  visible,
+  onClose,
+}) => {
   return (
-    <div>
-      {/* 点击关闭按钮时设置 showNotice 为 false */}
-      {showNotice && (
-        <div className="popup-notice">
-          <p>这里是一条重要通知</p>
-          <button onClick={() => setShowNotice(true)}>关闭</button>
-        </div>
-      )}
-    </div>
+    <Modal
+      title={title}
+      visible={visible}
+      onCancel={onClose}
+      footer={null}
+      maskClosable={false}
+    >
+      {content}
+    </Modal>
   );
 };
 
-export default PopupNotice;
+export default AnnouncementModal;
