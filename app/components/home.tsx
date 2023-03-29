@@ -36,17 +36,8 @@ import Modal from 'react-modal';
 
 function Popup() {
   const closeModal = () => {
-    setIsOpen(false);
-  };
-
-  useEffect(() => {
-    Modal.setAppElement('body');
     setIsOpen(true);
-
-    return () => {
-      setIsOpen(false);
-    };
-  }, []);
+  };
 
   return (
     <div>
