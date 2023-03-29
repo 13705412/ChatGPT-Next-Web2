@@ -30,12 +30,13 @@ import dynamic from "next/dynamic";
 import { REPO_URL } from "../constant";
 import { ControllerPool } from "../requests";
 import { Prompt, usePromptStore } from "../store/prompt";
-<PopupNotice />
+
 export function Loading(props: { noLogo?: boolean }) {
   return (
     <div className={styles["loading-content"]}>
       {!props.noLogo && <BotIcon />}
       <LoadingIcon />
+      <PopupNotice />
     </div>
   );
 }
