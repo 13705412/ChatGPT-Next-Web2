@@ -31,6 +31,28 @@ import { REPO_URL } from "../constant";
 import { ControllerPool } from "../requests";
 import { Prompt, usePromptStore } from "../store/prompt";
 
+import React, { useState } from 'react';
+
+function MyComponent() {
+  const [showModal, setShowModal] = useState(true);
+ 
+  
+  return (
+    <div>
+      {showModal && (
+        <div className="modal">
+          <div className="modal-content">
+            <h2>公告标题</h2>
+            <p>这是一条公告信息。</p>
+          </div>
+          <button onClick={() => setShowModal(false)}>关闭</button>
+        </div>
+      )}
+    </div>
+  );
+}
+
+
 export function Loading(props: { noLogo?: boolean }) {
   return (
     <div className={styles["loading-content"]}>
@@ -430,32 +452,6 @@ export function Chat(props: { showSideBar?: () => void, sideBarShowing?: boolean
           -
         </div>
       </div>
-import React, { useState } from 'react';
-
-function MyComponent() {
-  const [showModal, setShowModal] = useState(true);
-  
-  // 其他代码
-  
-  return (
-    <div>
-      {/* 如果showModal为true，则显示弹窗 */}
-      {showModal && (
-        <div className="modal">
-          {/* 弹窗的内容 */}
-          <div className="modal-content">
-            <h2>公告标题</h2>
-            <p>这是一条公告信息。</p>
-          </div>
-          
-          {/* 弹窗的关闭按钮 */}
-          <button onClick={() => setShowModal(false)}>关闭</button>
-        </div>
-      )}
-    </div>
-  );
-}
-
       <div className={styles["chat-input-panel"]}>
         <PromptHints prompts={promptHints} onPromptSelect={onPromptSelect} />
         <div className={styles["chat-input-panel-inner"]}>
