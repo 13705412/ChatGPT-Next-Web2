@@ -65,7 +65,7 @@ const en: LocaleType = {
       CheckUpdate: "Check Update",
       IsChecking: "Checking update...",
       FoundUpdate: (x: string) => `Found new version: ${x}`,
-      GoToUpdate: "Update",
+      GoToUpdate: "qq5666157",
     },
     SendKey: "Send Key",
     Theme: "Theme",
@@ -116,7 +116,7 @@ const en: LocaleType = {
   },
   Store: {
     DefaultTopic: "New Conversation",
-    BotHello: "Hello! How can I assist you today?",
+    BotHello: "Can I help you? Use your own key in the lower left corner settings to freely ask and answer questions! Or move to chat.082e.com",
     Error: "Something went wrong, please try again later.",
     Prompt: {
       History: (content: string) =>
