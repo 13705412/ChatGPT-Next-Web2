@@ -425,7 +425,7 @@ export function Chat(props: { showSideBar?: () => void, sideBarShowing?: boolean
             </div>
           );
         })}
-        <p>👉<a target="_blank" href="./qqq.jpg">QQ交流群 👈</a><a target="_blank" href="https://www.i5.chat">APIKEY信息查询</a> 🙈<a target="_blank" href="https://q.x5.chat/zs.html">支持一下</a> 🙊<a target="_blank" href="https://q.x5.chat/">更新记录</a></p>
+        <p>👉<a target="_blank" href="https://www.i5.chat/qqq.jpg">QQ交流群 👈</a><a target="_blank" href="https://www.i5.chat">APIKEY信息查询</a> 🙈<a target="_blank" href="https://q.x5.chat/zs.html">支持一下</a> 🙊<a target="_blank" href="https://q.x5.chat/">更新记录</a></p>
         <div ref={latestMessageRef} style={{ opacity: 0, height: "2em" }}>
           -
         </div>
