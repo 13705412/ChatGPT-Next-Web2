@@ -31,31 +31,6 @@ import { REPO_URL } from "../constant";
 import { ControllerPool } from "../requests";
 import { Prompt, usePromptStore } from "../store/prompt";
 
-import React, { useState, useEffect } from 'react';
-import Modal from 'react-modal';
-
-function Popup() {
-  const [isOpen, setIsOpen] = useState(false);
-
-  useEffect(() => {
-    setIsOpen(true);
-  }, []);
-
-  const togglePopup = () => {
-    setIsOpen(!isOpen);
-  };
-
-  return (
-    <div>
-      <Modal isOpen={isOpen} onRequestClose={togglePopup}>
-        <h2>公告标题</h2>
-        <p>公告正文内容。</p>
-        <button onClick={togglePopup}>关闭弹窗</button>
-      </Modal>
-    </div>
-  );
-}
-
 export function Loading(props: { noLogo?: boolean }) {
   return (
     <div className={styles["loading-content"]}>
