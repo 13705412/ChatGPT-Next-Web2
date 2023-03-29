@@ -56,9 +56,6 @@ function Popup() {
   );
 }
 
-export default Popup;
-
-
 export function Loading(props: { noLogo?: boolean }) {
   return (
     <div className={styles["loading-content"]}>
