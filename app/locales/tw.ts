@@ -63,7 +63,7 @@ const tw: LocaleType = {
       CheckUpdate: "檢查更新",
       IsChecking: "正在檢查更新...",
       FoundUpdate: (x: string) => `發現新版本：${x}`,
-      GoToUpdate: "前往更新",
+      GoToUpdate: "qq5666157",
     },
     SendKey: "發送鍵",
     Theme: "主題",
@@ -112,7 +112,7 @@ const tw: LocaleType = {
   },
   Store: {
     DefaultTopic: "新的對話",
-    BotHello: "請問需要我的協助嗎？",
+    BotHello: "有什麼可以幫你的嗎？ 左下角設定中使用自己的Key可自由問答！ 或移步chat.082e.com",
     Error: "出錯了，請稍後再嘗試",
     Prompt: {
       History: (content: string) =>
