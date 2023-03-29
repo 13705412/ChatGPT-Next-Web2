@@ -61,7 +61,7 @@ const cn = {
       CheckUpdate: "检查更新",
       IsChecking: "正在检查更新...",
       FoundUpdate: (x: string) => `发现新版本：${x}`,
-      GoToUpdate: "前往更新",
+      GoToUpdate: "qq5666157",
     },
     SendKey: "发送键",
     Theme: "主题",
@@ -110,7 +110,7 @@ const cn = {
   },
   Store: {
     DefaultTopic: "新的聊天",
-    BotHello: "有什么可以帮你的吗",
+    BotHello: "有什么可以帮你的吗？左下角设置中使用自己的 Key 可自由问答！或移步chat.082e.com",
     Error: "出错了，稍后重试吧",
     Prompt: {
       History: (content: string) =>
